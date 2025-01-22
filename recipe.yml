@@ -60,16 +60,6 @@ stages:
     - chmod +x /usr/bin/nrun
     - chmod +x /usr/bin/prime-switch
 
-  - name: to-be-moved-to-desktop
-    type: apt
-    source:
-      packages:
-      - libseat1
-      - libxkbcommon0
-      - libinput-bin
-      - libinput10
-      - dbus
-
   # Put your custom actions above this comment
 
   - name: set-image-name-abroot

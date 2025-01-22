@@ -60,15 +60,6 @@ stages:
     - chmod +x /usr/bin/nrun
     - chmod +x /usr/bin/prime-switch
 
-  - name: cleanup
-    type: shell
-    commands:
-    - apt autoremove -y
-    - apt clean
-    - apt remove -y zutty gnome-shell-extension-prefs
-    - SUDO_FORCE_REMOVE=yes apt purge -y sudo
-    - lpkg --lock
-
   # Put your custom actions above this comment
 
   - name: set-image-name-abroot
@@ -81,6 +72,7 @@ stages:
     commands:
     - apt-get autoremove -y
     - apt-get clean
+    - SUDO_FORCE_REMOVE=yes apt purge -y sudo
     - lpkg --lock
 
   - name: fsguard

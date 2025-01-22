@@ -2,7 +2,7 @@ name: Cosmic Vanilla Desktop Nvidia # Replace this name with your image name
 id: nvidia # Replace this ID with your image ID
 stages:
 - id: build
-  base: ghcr.io/vanilla-cosmic/desktop:main # Optionally, Replace this image URL with a different one i.e. nvidia:main, etc
+  base: ghcr.io/vanilla-cosmic/custom:main # Optionally, Replace this image URL with a different one i.e. nvidia:main, etc
   singlelayer: false
   labels:
     maintainer: self-maintained # Optionally, Replace this with your name
